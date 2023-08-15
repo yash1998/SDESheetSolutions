@@ -1,3 +1,5 @@
+package BinarySearch;
+
 public class FirstAndLastOccurBS {
     public static int count(int arr[], int n, int k) {
         //Your code goes here
