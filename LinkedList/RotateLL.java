@@ -2,7 +2,6 @@ package LinkedList;
 
 public class RotateLL {
     public static Node rotate(Node head, int k) {
-        // Write your code here.
         int n = 0;
         Node curr = head;
 
