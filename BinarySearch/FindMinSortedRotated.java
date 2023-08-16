@@ -31,7 +31,6 @@ public class FindMinSortedRotated {
     }
 
     public static int findKRotation(int []arr){
-        // Write your code here.
         int n= arr.length, st = 0, en = n-1;
 
         while(st<=en) {

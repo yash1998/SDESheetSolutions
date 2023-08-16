@@ -29,7 +29,7 @@ public class SearchSortedRotated {
         return -1;
     }
     
-    public static boolean searchInARotatedSortedArrayII(int []A, int key) {
+    public static boolean searchWithDuplicates(int []A, int key) {
         int n = A.length, st = 0, en = n-1;
 
         while(st<=en) {

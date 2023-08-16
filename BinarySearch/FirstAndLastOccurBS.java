@@ -2,7 +2,6 @@ package BinarySearch;
 
 public class FirstAndLastOccurBS {
     public static int count(int arr[], int n, int k) {
-        //Your code goes here
         int firstOccurence = -1, lastOccurence = -1, st = 0, en = n-1;
         while(st<=en) {
             int mid = st + (en-st)/2;
