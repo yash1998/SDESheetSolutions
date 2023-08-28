@@ -5,12 +5,20 @@ public class PalindromeLL {
         if (head == null || head.next == null)
             return true;
 
-        Node slow = head, fast = head;
+        Node prev = null, slow = head, fast = head;
         while (fast != null && fast.next != null) {
+            prev = slow;
             slow = slow.next;
             fast = fast.next.next;
         }
-        slow = reverse(slow.next);
+        if (fast == null) {
+            // even no. of nodes
+            slow = reverse(prev.next);
+        } else {
+            // odd no. of nodes
+            slow = reverse(slow.next);
+
+        }
         fast = head;
         while (slow != null) {
             if (slow.data != fast.data)
