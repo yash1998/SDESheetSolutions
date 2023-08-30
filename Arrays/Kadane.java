@@ -1,7 +1,5 @@
 package Arrays;
 
-import java.util.ArrayList;
-
 public class Kadane {
     public int maxSubArray(int[] nums) {
         int preSum = 0, maxx = Integer.MIN_VALUE;
